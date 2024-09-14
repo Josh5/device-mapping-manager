@@ -2,7 +2,7 @@
 
 FROM golang:1.19
 
-ENV DEBIAN_FRONTEND noninteractive
+ENV DEBIAN_FRONTEND=noninteractive
 
 WORKDIR /go/src/github.com/allfro/device-volume-driver
 
@@ -17,4 +17,3 @@ WORKDIR /
 COPY --from=0 /dvd /dvd
 
 ENTRYPOINT ["/dvd"]
-
