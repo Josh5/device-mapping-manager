@@ -6,7 +6,8 @@ services:
     image: docker
     entrypoint: docker
     command: |
-      run 
+      run
+      --rm
       -i
       --name device-manager 
       --restart always 
